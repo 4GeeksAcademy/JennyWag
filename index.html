@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jenny Post Card Project</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Link tags to import font-awesome.min.css and google fonts -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<!--Importing of external css from cloudflare.com -->
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
+
+		<!--Declaration of internal css-->
+		<style>
+			body {
+				font-family: "Sofia", Arial, Helvetica, sans-serif;
+			}
+
+			* {
+				box-sizing: border-box;
+			}
+
+			.input-container {
+				display: -ms-flexbox;
+				/* IE10 */
+				display: flex;
+				width: 100%;
+				margin-bottom: 15px;
+			}
+
+			.icon {
+				padding: 10px;
+				background: rgb(255, 150, 30);
+				color: white;
+				min-width: 50px;
+				text-align: center;
+			}
+
+			.input-field {
+				width: 100%;
+				padding: 10px;
+				outline: none;
+			}
+
+			.input-field:focus {
+				border: 2px solid rgb(255, 150, 30);
+			}
+
+			/* Set a style for the submit button */
+			.btn {
+				background-color: rgb(255, 150, 30);
+				color: white;
+				padding: 15px 20px;
+				border: none;
+				cursor: pointer;
+				width: 100%;
+				opacity: 0.9;
+				font-size: larger;
+			}
+
+			.btn:hover {
+				opacity: 1;
+			}
+
+			.postcard-container {
+				/* Add shadows to create the "card" effect */
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+				transition: 0.3s;
+			}
+
+			/* On mouse-over, add a deeper shadow */
+			.postcard-container:hover {
+				box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+			}
+
+			/* Add some padding inside the card container */
+			.inner-container1 {
+				padding: 2px 16px;
+			}
+
+			#header-color {
+				background-color: beige !important;
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+
+			.text-margin-space {
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="postcard-container" style="max-width: 500px; margin: auto">
+			<!--Declaration of internal css in tags-->
+			<div id="header-color">
+				<h1 style="text-align: left; float: left">Jenny's Postcard</h1>
+				<img
+					style="text-align: right; float: right; display: inline; width: 80px; height: 80px"
+					src="https://storage.googleapis.com/breathecode-asset-images/5318bde604cf5c915f94897a71b49ab2523101322ea21cb046db1e67c24fa3be.png?raw=true"
+					alt="Logo"
+				/>
+			</div>
+			<hr style="clear: both" />
+
+			<form action="" style="max-width: 500px; margin: auto">
+				<div style="text-align: left; float: left; width: 40%" class="text-margin-space">
+					<p>Look how awesome! This is a postcard that I created using HTML5 and CSS3 during my 4Geeks Academy Course!</p>
+					<p>This is so cool, can't wait to start doing more stuff!</p>
+				</div>
+
+				<div style="text-align: right; float: right; width: 40%" class="text-margin-space">
+					<div class="input-container">
+						<i class="fa fa-user icon"></i>
+						<!-- call of font awesome user icon class-->
+						<input class="input-field" type="text" placeholder="Your name" name="userrname" />
+					</div>
+
+					<div class="input-container">
+						<i class="fa fa-envelope icon"></i
+						><!-- call of font awesome envelop class-->
+						<input class="input-field" type="text" placeholder="Your Email" name="email" />
+					</div>
+
+					<div class="input-container">
+						<i class="fa fa-comment icon"></i
+						><!-- call of font awesome comment icon class-->
+						<input class="input-field" type="text" placeholder="Leave your comment" name="comment" />
+					</div>
+				</div>
+
+				<button type="submitpostcard" class="btn">Send My Postcard</button>
+			</form>
+		</div>
+	</body>
+</html>
